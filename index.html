@@ -9,11 +9,11 @@
     <!-- CSP -->
     <meta http-equiv="Content-Security-Policy" content="
     default-src *;
-    img-src *; 
+    img-src 'self' https://webfornotes.github.io/favicon.ico; 
     script-src 'self' ;
     style-src  'self' 'unsafe-inline' ;
     object-src 'none' ; 
-    require-trusted-types-for 'script'; "> <!-- IMG(only for base64) JS CSS-->
+    require-trusted-types-for 'script'; "/> <!--Img JS CSS-->
     <!-- /CSP -->
     <TITLE>WebForNotes - HKDSE筆記分享</TITLE>
     <link rel="icon" type="image/x-icon" href="https://webfornotes.github.io/favicon.ico"/>
