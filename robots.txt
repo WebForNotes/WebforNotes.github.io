@@ -1,2 +1,3 @@
 User-agent: *
+Disallow:
 Sitemap: https://webfornotes.github.io/sitemap.xml
