@@ -3,4 +3,3 @@ Disallow: /nogooglebot/
 
 User-agent: *
 Allow:/
-Sitemap: https://webfornotes.github.io/sitemap.xml
