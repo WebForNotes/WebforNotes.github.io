@@ -3,3 +3,48 @@ Disallow: /nogooglebot/
 
 User-agent: *
 Allow:/
+
+#Disallow some ai
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: viberbot
+Disallow: /
+
+# DisAllow real-time retrieval agents 
+
+User-agent: ChatGPT-User
+Disllow: / 
+
+User-agent: PerplexityBot
+Disllow: /
+
+User-agent: meta-externalagent
+Disllow: / 
+# Restrict training data collectors from sensitive content 
+
+User-agent: GPTBot
+Disallow: /
+premium-content/ 
+Disallow: /
+subscription-only/ 
+Allow: / 
+
+User-agent: ClaudeBot
+Disallow: /
+premium-content/ 
+Disallow: /
+subscription-only/ 
+Allow: / 
+
+# Block certain agents entirely 
+User-agent: CCBot Disallow: /
+
+
