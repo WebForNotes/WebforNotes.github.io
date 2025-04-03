@@ -1,8 +1,19 @@
-User-agent: Googlebot
-Disallow: /nogooglebot/
+#Allow google,bing,yahoo (idex.html only)
 
 User-agent: *
-Allow:/
+Disallow: /
+
+User-agent: Googlebot
+Disallow:/
+Allow:/index.html
+
+User-agent: Bingbot
+Disallow:/
+Allow:/index.html
+
+User-agent: Slurp
+Disallow:/
+Allow:/index.html
 
 #Disallow some ai
 
@@ -21,13 +32,14 @@ Disallow: /
 # DisAllow real-time retrieval agents 
 
 User-agent: ChatGPT-User
-Disllow: / 
+Disallow: / 
 
 User-agent: PerplexityBot
-Disllow: /
+Disallow: /
 
 User-agent: meta-externalagent
-Disllow: / 
+Disallow: / 
+
 # Restrict training data collectors from sensitive content 
 
 User-agent: GPTBot
@@ -35,14 +47,14 @@ Disallow: /
 premium-content/ 
 Disallow: /
 subscription-only/ 
-Allow: / 
+Disallow: / 
 
 User-agent: ClaudeBot
 Disallow: /
 premium-content/ 
 Disallow: /
 subscription-only/ 
-Allow: / 
+Disallow: / 
 
 # Block certain agents entirely 
 User-agent: CCBot Disallow: /
