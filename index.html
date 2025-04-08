@@ -16,7 +16,9 @@
     style-src  'self' 'unsafe-inline' ;
     object-src 'none' ; 
     require-trusted-types-for 'script'; 
-    frame-ancestors 'none';"/> <!--Img JS CSS-->
+    frame-ancestors 'self';"/> <!--Img JS CSS-->
+    <meta name="referrer" content="no-referrer">
+    <link rel="noopener noreferrer">
     <!-- /CSP -->
         
     <meta name="robots" content="noodp,noydir" />
