@@ -134,7 +134,7 @@ function showBlockedMessage() {
 fetch('https://ipapi.co/json/')
   .then(response => response.json())
   .then(data => {
-    const allowedCountries = ['HK'];
+    const allowedCountries = ['HK','TW'];
     
     if (!allowedCountries.includes(data.country)) {
         showBlockedMessage();
